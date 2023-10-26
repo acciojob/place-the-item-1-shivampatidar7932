@@ -1,24 +1,23 @@
 
-/* Your CSS Code here. */
-/* Set up the holder as a flex container */
+
 .holder {
     display: flex;
-    flex-wrap: nowrap; /* Items will stay in a single row and not wrap */
-    justify-content: space-between; /* Items are spaced evenly with the first and last touching the ends */
-    width: 100vw; /* Full viewport width */
-    overflow: auto; /* Enable horizontal scroll if there are more items */
-    padding: 0 20px; /* Add padding to the holder for space at the ends */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+	width: 100vw; 
+    overflow: auto; 
+    padding: 0 20px; 
 }
 
-/* Style for item */
+
 .item {
     width: 100px;
     height: 100px;
     background-color: lightblue;
-    margin-right: 10px; /* Add some space between items (adjust as needed) */
+    margin-right: 10px; 
 }
 
-/* Remove margin-right for the last item to prevent extra space at the end */
+
 .item:last-child {
     margin-right: 0;
 }
